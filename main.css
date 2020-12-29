@@ -112,79 +112,6 @@ body {
   height: 100%;
 }
 
-/* .loader-wrapper {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #242f3f;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.loader {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  position: relative;
-  border: 4px solid #Fff;
-  animation: loader 2s infinite ease;
-}
-
-.loader-inner {
-  vertical-align: top;
-  display: inline-block;
-  width: 100%;
-  background-color: #fff;
-  animation: loader-inner 2s infinite ease-in;
-} */
-
-/* @keyframes loader {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  25% {
-    transform: rotate(180deg);
-  }
-
-  50% {
-    transform: rotate(180deg);
-  }
-
-  75% {
-    transform: rotate(360deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes loader-inner {
-  0% {
-    height: 0%;
-  }
-
-  25% {
-    height: 0%;
-  }
-
-  50% {
-    height: 100%;
-  }
-
-  75% {
-    height: 100%;
-  }
-
-  100% {
-    height: 0%;
-  }
-} */
-
 nav {
   background: #0f0c29;
   /* fallback for old browsers */
@@ -316,20 +243,20 @@ body {
   color: whitesmoke;
 }
 
-.card-header {
+#skills .card-header {
   color: black;
 }
 
-.card-body {
+#skills .card-body {
   color: rgb(157, 230, 240);
   background: black;
 }
 
-.card-body p {
+#skills .card-body p {
   color: rgb(157, 230, 240);
 }
 
-.card {
+#skills .card {
   box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.9);
 }
 
@@ -342,12 +269,12 @@ body {
   padding-bottom: 10vmin;
 }
 
-.col-md-3 .card {
+#skills .col-md-3 .card {
   width: 100%;
   height: 100%;
 }
 
-.card-img-top img {
+#skills .card-img-top img {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -413,7 +340,7 @@ footer {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.card {
+#skills .card {
   display: block;
   position: relative;
   max-width: 262px;
@@ -428,7 +355,7 @@ footer {
   box-shadow: 5px 5px 5px rgb(9, 83, 8);
 }
 
-.card:before {
+#skills .card:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -448,7 +375,7 @@ footer {
   transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
 }
 
-.card:hover:before {
+#skills .card:hover:before {
   -webkit-transform: scale(21);
   transform: scale(18);
   border-radius: 32px;
@@ -516,7 +443,62 @@ video {
 .navbar-fixed-bottom .container {
   width: 100%;
 }
-
+.accordion {
+  margin-top: 60px; /* Add space above accordion */
+}
+.accordion .card {
+  border-radius: 0;
+  border-width: 1px 0 1px 0;
+}
+.accordion .card:first-child {
+  border-top: none;
+}
+.accordion .card .card-header {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-radius: 0;
+  margin-bottom: -2px;
+  font-family: "Roboto", sans-serif;
+}
+/* .accordion .card-header:hover {
+  background: #f8f8f8;
+} */
+.accordion .card-header h2 span {
+  float: left;
+  margin-top: 10px;
+}
+.accordion .card-header .btn {
+  font-size: 1.04rem;
+  font-weight: 500;
+  width: 100%;
+  text-align: left;
+  position: relative;
+  top: -2px;
+}
+.accordion .card-header i {
+  float: right;
+  font-size: 1.3rem;
+  font-weight: bold;
+  position: relative;
+  top: 5px;
+}
+/* .accordion .card-header a:hover {
+  color: #fff;
+} */
+.accordion .btn:hover {
+  color: #000;
+  background: white;
+}
+.accordion .card-body {
+  background: #eaeaea;
+  color: #595959;
+}
+.accordion .highlight {
+  color: rgb(0, 0, 0) !important;
+  background: #fdfdfd !important;
+}
 /*------------------------ Mobile Section---------------------------- */
 
 @media only screen and (max-width: 991px) {
@@ -531,7 +513,11 @@ video {
     max-width: 100%;
     overflow-x: hidden !important;
   }
-
+  /* body {
+    font-family: "Lato", sans-serif;
+    color: white;
+    background: rgb(48, 4, 99);
+  } */
   video {
     width: 500px;
     height: 300px;
@@ -573,7 +559,7 @@ video {
     padding: 10px;
   }
 
-  .card {
+  #skills .card {
     margin-left: 33%;
   }
 
@@ -605,7 +591,7 @@ video {
 }
 
 @media only screen and (max-width: 468px) {
-  .card {
+  #skills .card {
     margin-left: 15% !important;
   }
 
