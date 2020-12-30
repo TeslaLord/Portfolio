@@ -803,6 +803,7 @@
             document.getElementById(cityName).style.display = "block";
             evt.currentTarget.className += " active";
         }
+
         $('#mobile-view-projects .btn').click(function () {
             var tempEl = this.querySelector('i')
             var tempElResult = tempEl.innerHTML
@@ -812,13 +813,12 @@
             });
             $(".card-header").not($(this).parents()).removeClass("highlight");
             $(this).parents(".card-header").addClass("highlight");
-            console.log(tempEl.innerHTML);
+
             if (tempElResult == "remove") {
                 tempEl.innerHTML = "add"
             } else {
                 tempEl.innerHTML = "remove"
             }
-
         });
         $(window).on("load", function () {
 
