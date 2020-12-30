@@ -455,7 +455,7 @@
                     <div class="col-lg-8 offset-lg-2">
                         <div class="accordion" id="accordionExample">
                             <div class="card">
-                                <div class="card-header" id="headingOne">
+                                <div class="card-header highlight selected-card" id="headingOne">
                                     <h2 class="clearfix mb-0">
                                         <a class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
                                             aria-expanded="true" aria-controls="collapseOne">Interactive Algorithms
@@ -805,11 +805,21 @@
         }
         $('#mobile-view-projects .btn').click(function () {
             var tempEl = this.querySelector('i')
-            if (tempEl.innerHTML == "add") {
-                tempEl.innerHTML = "remove"
-            } else {
+            var tempElResult = tempEl.innerHTML
+            var loopEl = document.getElementById('mobile-view-projects').querySelectorAll('i')
+            loopEl.forEach(element => {
+                element.innerHTML = "add"
+            });
+            $(".card-header").not($(this).parents()).removeClass("highlight");
+            $(this).parents(".card-header").addClass("highlight");
+            console.log(tempEl.innerHTML);
+            if (tempElResult == "remove") {
                 tempEl.innerHTML = "add"
-            } //Adds 'a', removes 'b' and vice versa
+            } else {
+                tempEl.innerHTML = "remove"
+            }
+
+            // tempEl.innerHTML = "remove"
         });
         $(window).on("load", function () {
 
