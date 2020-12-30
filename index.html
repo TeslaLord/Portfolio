@@ -379,7 +379,7 @@
         <section class="projects" id="projects">
 
         </section>
-        <section id="mobile-view-projects" class="d-block">
+        <section id="mobile-view-projects">
 
         </section>
         <div class="temp">
@@ -610,7 +610,7 @@
                                         <a class="btn btn-link collapsed" data-toggle="collapse"
                                             data-target="#collapseSix" aria-expanded="false"
                                             aria-controls="collapseSix">VegFinger
-                                            classification <i class="material-icons">add</i></a>
+                                            <i class="material-icons">add</i></a>
                                     </h2>
                                 </div>
                                 <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
@@ -637,7 +637,7 @@
                                         <a class="btn btn-link collapsed" data-toggle="collapse"
                                             data-target="#collapseSeven" aria-expanded="false"
                                             aria-controls="collapseSeven">Fire Fighting Robot
-                                            classification <i class="material-icons">add</i></a>
+                                             <i class="material-icons">add</i></a>
                                     </h2>
                                 </div>
                                 <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
@@ -787,6 +787,7 @@
             </div>`
             // myProjDesktopElement.setAttribute("class", "d-block");
             // myProjMobileElement.setAttribute("class", "d-block");
+            document.getElementById("defaultOpen").click();
         }
 
         function openCity(evt, cityName) {
@@ -802,7 +803,16 @@
             document.getElementById(cityName).style.display = "block";
             evt.currentTarget.className += " active";
         }
+        $('#mobile-view-projects .btn').click(function () {
+            var tempEl = this.querySelector('i')
+            if (tempEl.innerHTML == "add") {
+                tempEl.innerHTML = "remove"
+            } else {
+                tempEl.innerHTML = "add"
+            } //Adds 'a', removes 'b' and vice versa
+        });
         $(window).on("load", function () {
+
             $(".loader-wrapper").fadeOut("slow");
             var hT = $('#skill-bar-wrapper').offset().top,
                 hH = $('#skill-bar-wrapper').outerHeight(),
@@ -818,30 +828,29 @@
             });
             // }
         });
-        $(document).ready(function () {
-            // Add minus icon for collapse element which is open by default
-            $(".collapse.show").each(function () {
-                $(this).siblings(".card-header").find(".btn i").html("remove");
-                $(this).prev(".card-header").addClass("highlight");
-            });
+        // $(document).ready(function () {
+        //     // Add minus icon for collapse element which is open by default
+        //     $(".collapse.show").each(function () {
+        //         $(this).siblings(".card-header").find(".btn i").html("remove");
+        //         $(this).prev(".card-header").addClass("highlight");
+        //     });
 
-            // Toggle plus minus icon on show hide of collapse element
-            $(".collapse")
-                .on("show.bs.collapse", function () {
-                    $(this).parent().find(".card-header .btn i").html("remove");
-                })
-                .on("hide.bs.collapse", function () {
-                    $(this).parent().find(".card-header .btn i").html("add");
-                });
+        //     // Toggle plus minus icon on show hide of collapse element
+        //     $(".collapse")
+        //         .on("show.bs.collapse", function () {
+        //             $(this).parent().find(".card-header .btn i").html("remove");
+        //         })
+        //         .on("hide.bs.collapse", function () {
+        //             $(this).parent().find(".card-header .btn i").html("add");
+        //         });
 
-            // Highlight open collapsed element
-            $(".card-header .btn").click(function () {
-                $(".card-header").not($(this).parents()).removeClass("highlight");
-                $(this).parents(".card-header").toggleClass("highlight");
-            });
-        });
+        //     // Highlight open collapsed element
+        //     $(".card-header .btn").click(function () {
+        //         $(".card-header").not($(this).parents()).removeClass("highlight");
+        //         $(this).parents(".card-header").toggleClass("highlight");
+        //     });
+        // });
         // Get the element with id="defaultOpen" and click on it
-        document.getElementById("defaultOpen").click();
     </script>
 
 </body>
