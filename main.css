@@ -143,12 +143,24 @@ body {
   /* background: #B3FFAB;
     background: -webkit-linear-gradient(to right, #12FFF7, #B3FFAB);
     background: linear-gradient(to right, #12FFF7, #B3FFAB); */
-  background: #000 #360033;
+  /* background: #000 #360033; */
   /* fallback for old browsers */
-  background: #000 -webkit-linear-gradient(to right, #0b8793, #360033);
+  /* background: #000 -webkit-linear-gradient(to right, #0b8793, #360033); */
   /* Chrome 10-25, Safari 5.1-6 */
-  background: #000 linear-gradient(to right, #00464d, #360033);
+  /* background: #000 linear-gradient(to right, #00464d, #360033); */
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+  background: #000000;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #114911, #000000);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #234123, #000000);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+
 }
 
 .navbar-nav>li {
