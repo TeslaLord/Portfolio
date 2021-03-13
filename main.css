@@ -1,17 +1,44 @@
 * {
   box-sizing: border-box;
+  /* background: url('images/bg.jpg') !important; */
+
 }
+
+
+
+.container,
+.container-fluid {
+  background: black !important;
+}
+
+nav,
+nav .container {
+  background: url('images/bg.jpg') !important;
+}
+
+
 
 html {
   scroll-behavior: smooth !important;
   max-width: 100% !important;
   overflow-x: hidden !important;
+
 }
 
 body {
   scroll-behavior: smooth !important;
   max-width: 100% !important;
   overflow-x: hidden !important;
+  background: url('images/bg.jpg') !important;
+
+
+}
+
+.moreabout .container {
+  background: -webkit-linear-gradient(to right, #05052b, #302b63, #0f0c29);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #15151b, #000000) !important;
+
 }
 
 .loader-wrapper {
@@ -140,26 +167,6 @@ nav {
 body {
   font-family: "Lato", sans-serif;
   color: white;
-  /* background: #B3FFAB;
-    background: -webkit-linear-gradient(to right, #12FFF7, #B3FFAB);
-    background: linear-gradient(to right, #12FFF7, #B3FFAB); */
-  /* background: #000 #360033; */
-  /* fallback for old browsers */
-  /* background: #000 -webkit-linear-gradient(to right, #0b8793, #360033); */
-  /* Chrome 10-25, Safari 5.1-6 */
-  /* background: #000 linear-gradient(to right, #00464d, #360033); */
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
-  background: #000000;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #114911, #000000);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #234123, #000000);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
-
 
 }
 
@@ -360,14 +367,7 @@ footer .column a+a {
   color: white;
 }
 
-footer {
-  background: #0f0c29;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #24243e, #15122e, #181530);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
+
 
 #skills .card {
   display: block;
