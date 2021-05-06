@@ -119,10 +119,11 @@
                         <p>I'm currently pursuing Electronics and Communication
                             Engineering.
                         </p>
-                        <p>I am an aspiring software engineer, with skills in
-                            web development, and machine learning.
+                        <p>I am an aspiring software engineer, with skills in data science, machine learning
+                            web development, IoT and Robotics.
                         </p>
-                        <p>I enjoy problem solving, developing and debugging applications.
+                        <p>I enjoy problem solving, debugging and developing algorithmically high-efficient
+                            applications.
                             My goal is to build products which provide good value to everyone.
                         </p>
                         <br>
@@ -204,11 +205,15 @@
                                     <div class="skills" style="background: white;"></div>
                                 </div><br>
 
-                                Linux<span style="float:right;">85%</span>
-                                <div class="skillbar-container clearfix" data-percent="85%">
+                                Linux<span style="float:right;">75%</span>
+                                <div class="skillbar-container clearfix" data-percent="75%">
                                     <div class="skills" style="background: white;"></div>
                                 </div><br>
 
+                                React<span style="float:right;">50%</span>
+                                <div class="skillbar-container clearfix" data-percent="50%">
+                                    <div class="skills" style="background: white;"></div>
+                                </div><br>
 
                                 Git<span style="float:right;">70%</span>
                                 <div class="skillbar-container clearfix" data-percent="70%">
@@ -257,17 +262,19 @@
                 <p><small>Dec 28, 2020 - Feb 5, 2021</small></p>
 
 
-                <h6> A 2 month python developer intern at pianalytix, where I worked and taught on 8 different projects
-                    covering
+                <h6> Python developer intern at pianalytix, where I worked and taught on 8 different
+                    intermediate-advanced level projects
+                    covering various libraries and frameworks of python
                     python, tkinter, django, image processing etc...</h6>
                 <br><br>
                 <h5><a href="https://www.pinesphere.com/>" target="_blank"><img class="rounded-circle"
                             src="images/pinesphere.png" width=50 height=50 alt=""></a><b>Internet of Things Intern |
                         Pinesphere
                         Solutions Pvt Ltd</b></h5>
-                <p><small>Feb 10, 2021 – Present</small></p>
+                <p><small>Feb 10, 2021 – March 21, 2021</small></p>
 
-                <h6>Working on an embedded systems product - "Automatic Floor Sanitizer Robot"</h6>
+                <h6>Worked on an embedded systems industrial product aimed for medical facilities and public places -
+                    "Automatic Floor Sanitizer Robot"</h6>
                 <!-- <img src="images/exp.png" alt="Experience"> -->
             </section>
             <br><br>
@@ -969,8 +976,8 @@
                 tempEl.innerHTML = "remove"
             }
         });
-        $(window).on("load", function () {
-
+        //$(window).on("load", function () {
+        setTimeout(function () {
             $(".loader-wrapper").fadeOut("slow");
             var hT = $('#skill-bar-wrapper').offset().top,
                 hH = $('#skill-bar-wrapper').outerHeight(),
@@ -985,7 +992,7 @@
                 });
             });
             // }
-        });
+        }, 4000);
     </script>
 
 </body>

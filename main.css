@@ -1,10 +1,7 @@
 * {
   box-sizing: border-box;
   /* background: url('images/bg.jpg') !important; */
-
 }
-
-
 
 .container,
 .container-fluid {
@@ -13,32 +10,26 @@
 
 nav,
 nav .container {
-  background: url('images/bg.jpg') !important;
+  background: url("images/bg.jpg") !important;
 }
-
-
 
 html {
   scroll-behavior: smooth !important;
   max-width: 100% !important;
   overflow-x: hidden !important;
-
 }
 
 body {
   scroll-behavior: smooth !important;
   max-width: 100% !important;
   overflow-x: hidden !important;
-  background: url('images/bg.jpg') !important;
-
-
+  background: url("images/bg.jpg") !important;
 }
 
 .moreabout .container {
   background: -webkit-linear-gradient(to right, #05052b, #302b63, #0f0c29);
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #15151b, #000000) !important;
-
 }
 
 .loader-wrapper {
@@ -167,10 +158,9 @@ nav {
 body {
   font-family: "Lato", sans-serif;
   color: white;
-
 }
 
-.navbar-nav>li {
+.navbar-nav > li {
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -352,7 +342,7 @@ footer .container-fluid {
   padding: 10vmin 10vmin;
 }
 
-footer .column a+a {
+footer .column a + a {
   padding: 0 0.7em;
 }
 
@@ -366,8 +356,6 @@ footer .column a+a {
   border: none;
   color: white;
 }
-
-
 
 #skills .card {
   display: block;
